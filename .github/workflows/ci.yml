@@ -18,7 +18,9 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Build test runner image
-        run: docker build -t java-test-runner .
+        run: docker build -t java-test-runner ./automation
+
 
       - name: Run tests inside Docker
         run: docker run --rm java-test-runner
+
