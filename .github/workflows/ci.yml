@@ -28,6 +28,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: TestNG-Report
-          path: automation/target/surefire-reports/
+          path: target/surefire-reports/
 
 
