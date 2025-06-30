@@ -24,3 +24,10 @@ jobs:
       - name: Run tests inside Docker
         run: docker run --rm java-test-runner
 
+      - name: Upload TestNG Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: TestNG-Report
+          path: automation/target/surefire-reports/
+
+
