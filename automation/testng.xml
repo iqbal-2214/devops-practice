@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DevOpsTestSuite">
+  <test name="AllTests">
+    <packages>
+      <package name="com.devops.ui"/>
+      <package name="com.devops.api"/>
+      <!-- mobile will be added later -->
+    </packages>
+  </test>
+</suite>
